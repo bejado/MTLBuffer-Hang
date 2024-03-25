@@ -43,10 +43,10 @@ NSString* optionToString(MTLResourceOptions option) {
     [super viewDidLoad];
     _metalDevice = MTLCreateSystemDefaultDevice();
 
-    //[self allocateBuffersOfSize:1024 options:MTLResourceStorageModePrivate];
+    [self allocateBuffersOfSize:1024 options:MTLResourceStorageModePrivate];
 
     // Helpful to determine if the size or storage mode matters.
-    [self doBufferAllocationStats];
+    // [self doBufferAllocationStats];
 }
 
 - (void)doBufferAllocationStats {
